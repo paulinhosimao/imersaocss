@@ -1,44 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Paulo Simão - Web Developer</title>
-	<link rel="stylesheet" href="css/estilos.css">
- 
-</head>
-<body>
-	<header>
-		<nav class="menu">
-			<ul>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Portfólio</a></li>
-				<li><a href="#">Contato</a></li>
-			</ul>
-		</nav>
-		<div>
-			<h1 class="site-title">Paulo Simão da Silva Junior</h1>
-			<h2 class="site-subtitle">Web Developer</h2>
-		</div>
-	</header>
-	<section>
-		<h2>Portfólio</h2>
-		<figure>
-			<img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-			<figcaption>eCommerce</figcaption>
-		</figure>
-		<figure>
-			<img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-			<figcaption>Mobile</figcaption>
-		</figure>
-		<figure>
-			<img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-			<figcaption>Web design</figcaption>
-		</figure>
-		<figure>
-			<img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-			<figcaption>Projetos pessoais</figcaption>
-		</figure>
-	</section>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Simão</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+   >
+   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+    <script
+      src="https://kit.fontawesome.com/6d6952c5be.js"
+      crossorigin="anonymous"
+   ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul class="container">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="titulo">
+        <h1 class="site-title">Paulo Simão</h1>
+        <h2 class="site-subtitle">Jr. Frontend Developer</h2>
+       
+      </div>
+    </header>
+    <section class="sobre container" id="sobre">
+      <h2>Sobre</h2>
+
+      <figure class="avatar">
+        <img src="./img/paulo-avatar.jpg" alt="Paulo Simão">
+      </figure>
+
+      <p class="tituloNovo">Experiência</p>
+      <p>Analista Programador Web - UNIMED SOROCABA</p>
+      <p>Descrição: Análise, manutenção e desenvolvimento de sistemas web, atendimento de chamados, e suporte a usuários.</p> 
+
+      <p class="tituloNovo">Formação</p>
+      <p>Bacharel em Sistemas de Informação - ESAMC SOROCABA - 2006/2009</p>
+      <p>Pós Graduado em Tecnologia de Desenvolvimento de Software - SENAC SOROCABA - 2012/2013</p> 
+    
+
+
+      <p>
+        Este site foi construído durante a
+        <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>
+        😻
+      </p>
+    </section>
+    <section class="portfolio container" id="portfolio">
+      <h2>Projetos</h2>
+
+      <div class="grid">
+		  
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/capa_Face_2020.jpg" alt="Wagner Funilaria">
+            </figure>
+            <div class="card-back">
+              <h3>Wagner Funilaria - Paixão por carros</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/quarentena_dev.jfif" alt="Quarentena Dev">
+            </figure>
+            <div class="card-back">
+              <h3>Quarentena Dev - Alura</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/hispters.png" alt="Imersão CSS">
+            </figure>
+            <div class="card-back">
+				      <h3>Imersão CSS - Alura</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/familia_2.jpg" alt="Family">
+            </figure>
+            <div class="card-back">
+              <h3>My Family</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/futelesos.jpg" alt="Futelesos">
+            </figure>
+          <div class="card-back">
+            <h3>Futelesos</h3>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="contato container" id="contato">
+      <h2>Contato</h2>
+
+      <div class="grid icons">
+        <a target="_blank" href="https://github.com/paulinhosimao">
+          <i class="fab fa-github"></i>
+        </a>
+        <!--a target="_blank" href="https://twitter.com/paulo_caelum">
+          <i class="fab fa-twitter"></i>
+        </a-->
+        <a target="_blank" href="https://linkedin.com/in/paulosdsj">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/paulinho.simao/">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+  </body>
 </html>
